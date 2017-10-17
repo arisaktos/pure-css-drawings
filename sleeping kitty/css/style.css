@@ -1,0 +1,342 @@
+.night-sky {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(37, 109, 161, 1);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(37, 109, 161, 1)), color-stop(64%, rgba(239, 243, 247, 1)), color-stop(100%, rgba(239, 243, 247, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 109, 161, 1)), color-stop(64%, rgba(239, 243, 247, 1)), to(rgba(239, 243, 247, 1)));
+    background: linear-gradient(to bottom, rgba(37, 109, 161, 1) 0%, rgba(239, 243, 247, 1) 64%, rgba(239, 243, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#256da1', endColorstr='#eff3f7', GradientType=0);
+
+}
+
+.cat {
+    position: relative;
+    top: 297px;
+    left: 106px;
+}
+
+.cat-body {
+    width: 256px;
+    top: 151px;
+    left: 23px;
+    height: 146px;
+    border-radius: 47%;
+    background: rgba(168, 168, 168, 1);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168, 168, 168, 1)), color-stop(48%, rgba(168, 168, 168, 1)), color-stop(100%, rgba(134, 174, 204, 1)));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(168, 168, 168, 1)), color-stop(48%, rgba(168, 168, 168, 1)), to(rgba(134, 174, 204, 1)));
+    background: linear-gradient(to right, rgba(168, 168, 168, 1) 0%, rgba(168, 168, 168, 1) 48%, rgba(134, 174, 204, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a8a8', endColorstr='#86aecc', GradientType=1);
+    -webkit-animation: cat-breath 2s infinite;
+    animation: cat-breath 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-transform: rotatex(180deg);
+    transform: rotatex(180deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+@-webkit-keyframes cat-breath {
+    0% {
+        height: 146px;
+    }
+    100% {
+        height: 160px;
+    }
+}
+
+@keyframes cat-breath {
+    0% {
+        height: 146px;
+    }
+    100% {
+        height: 160px;
+    }
+}
+
+.cat-tail {
+    width: 169px;
+    top: 23px;
+    left: -20px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #eff4f7;
+}
+
+.cat div {
+    position: absolute;
+}
+
+.cat-head {
+    position: relative;
+    width: 168px;
+    height: 115px;
+    border-radius: 47%;
+    background: rgba(134, 174, 204, 1);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(134, 174, 204, 1)), color-stop(42%, rgba(134, 174, 204, 1)), color-stop(81%, rgba(168, 168, 168, 1)), color-stop(100%, rgba(168, 168, 168, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 174, 204, 1)), color-stop(42%, rgba(134, 174, 204, 1)), color-stop(81%, rgba(168, 168, 168, 1)), to(rgba(168, 168, 168, 1)));
+    background: linear-gradient(to bottom, rgba(134, 174, 204, 1) 0%, rgba(134, 174, 204, 1) 42%, rgba(168, 168, 168, 1) 81%, rgba(168, 168, 168, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#a8a8a8', GradientType=0);
+}
+
+.cat-ear {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #86aecc;
+}
+
+.ear-right {
+    border-left: 50px solid transparent;
+    border-right: 10px solid transparent;
+    top: -19px;
+    left: 100px;
+}
+
+.ear-left {
+    border-left: 10px solid transparent;
+    border-right: 50px solid transparent;
+    top: -26px;
+    left: 15px;
+}
+
+.ear-inside {
+    width: 0;
+    height: 0;
+    border-radius: 30%;
+}
+
+.ear-inside-right {
+    border-left: 10px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #bed8ec;
+    top: 12px;
+    -webkit-transform: rotate(192deg);
+    transform: rotate(192deg);
+    left: -20px;
+}
+
+.ear-inside-left {
+    border-left: 15px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 22px solid #bed8ec;
+    top: 14px;
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+    left: -4px;
+}
+
+
+
+.eye {
+    border: solid 5px #3e3e3e;
+    border-color: transparent transparent transparent #3e3e3e;
+    background-color: transparent;
+    border-radius: 40%;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    width: 61px;
+    height: 58px;
+}
+
+.eye-left {
+    top: -21px;
+    left: 15px;
+}
+
+.eye-right {
+    top: -21px;
+    left: 83px;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #3e3e3e;
+    border-radius: 50%;
+    top: 59px;
+    left: 61px;
+}
+
+.nose-dot {
+    width: 6px;
+    border-radius: 40%;
+    height: 1px;
+    background-color: #c7c7c7;
+    top: 63px;
+    left: 83px;
+}
+
+.cheek {
+    width: 35px;
+    height: 18px;
+    background-color: #eacece;
+    border-radius: 40%;
+    top: 50px;
+}
+
+.cheek-right {
+    left: -6px;
+}
+
+.cheek-left {
+    left: 136px;
+}
+
+.mouth {
+    border: solid 5px #3e3e3e;
+    border-color: transparent transparent transparent #3e3e3e;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    width: 73px;
+    height: 41px;
+}
+
+.mouth-left {
+    top: 20px;
+    left: 24px;
+}
+
+.mouth-right {
+    top: 20px;
+    left: 54px;
+}
+
+.whiskers {
+    border: solid 2px #838383;
+    border-color: transparent transparent transparent #838383;
+    background-color: transparent;
+    width: 13px;
+    height: 74px;
+
+}
+
+.whisker1 {
+    top: 10px;
+    left: 10px;
+    transform: rotate(280deg);
+    -webkit-transform: rotate(280deg);
+    -moz-transform: rotate(280deg);
+    -o-transform: rotate(280deg);
+    -ms-transform: rotate(280deg);
+}
+
+.whisker2 {
+    top: 19px;
+    left: 0px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+.whisker3 {
+    top: 26px;
+    left: 4px;
+    transform: rotate(265deg);
+    -webkit-transform: rotate(265deg);
+    -moz-transform: rotate(265deg);
+    -o-transform: rotate(265deg);
+    -ms-transform: rotate(265deg);
+}
+
+.whisker4 {
+    top: 10px;
+    left: 136px;
+    transform: rotate(260deg);
+    -webkit-transform: rotate(260deg);
+    -moz-transform: rotate(260deg);
+    -o-transform: rotate(260deg);
+    -ms-transform: rotate(260deg);
+}
+
+.whisker5 {
+    top: 16px;
+    left: 148px;
+    transform: rotate(265deg);
+    -webkit-transform: rotate(265deg);
+    -moz-transform: rotate(265deg);
+    -o-transform: rotate(265deg);
+    -ms-transform: rotate(265deg);
+}
+
+.whisker6 {
+    top: 23px;
+    left: 142px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+.zzz {
+    position: absolute;
+    top: 85px;
+    left: 166px;
+
+}
+
+.zzz p:first-child {
+    font-size: 35px;
+    -webkit-animation: dissapear 2.5s infinite;
+    animation: dissapear 2.5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+}
+
+@-webkit-keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.zzz p:nth-child(2) {
+    font-size: 25px;
+    -webkit-animation: dissapear 2s infinite;
+    animation: dissapear 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.zzz p:last-child {
+    font-size: 15px;
+    -webkit-animation: dissapear 3s infinite;
+    animation: dissapear 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
